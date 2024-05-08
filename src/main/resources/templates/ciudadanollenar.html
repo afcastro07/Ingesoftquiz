@@ -21,16 +21,20 @@
         <form th:action="@{/accioncrear}" method="post" th:object="${ciudadanollenar}">
 
             <div class="form-group">
-                <label class="control-label" for="modelo">Modelo: </label>
-                <input id="modelo" type="text" class="form-control" th:field="*{modelo}"
+                <label class="control-label" for="nombres">nombres: </label>
+                <input id="nombres" type="text" class="form-control" th:field="*{nombres}"
                        required autofocus="autofocus">
             </div>
             <div class="form-group">
-                <label class="control-label" for="placa">Placa : </label>
-                <input id="placa" type="text" class="form-control" th:field="*{placa}"
+                <label class="control-label" for="apellidos">Apellidos : </label>
+                <input id="Apellidos" type="text" class="form-control" th:field="*{apellidos}"
                        required autofocus="autofocus">
             </div>
-
+            <div class="form-group">
+                <label class="control-label" for="edad">Edad : </label>
+                <input id="edad" type="text" class="form-control" th:field="*{edad}"
+                       required autofocus="autofocus">
+            </div>
 
 
             <br>
