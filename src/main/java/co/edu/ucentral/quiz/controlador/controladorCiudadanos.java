@@ -1,6 +1,7 @@
 package co.edu.ucentral.quiz.controlador;
 
 import co.edu.ucentral.quiz.entidades.Ciudadano;
+import co.edu.ucentral.quiz.servicios.ServiciosCiudadano;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

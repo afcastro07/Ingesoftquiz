@@ -2,13 +2,14 @@ package co.edu.ucentral.quiz.servicios;
 
 import co.edu.ucentral.quiz.entidades.Ciudadano;
 import co.edu.ucentral.quiz.operaciones.OperacionesCiudadano;
+import co.edu.ucentral.quiz.repositorio.RepositorioCiudadano;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class serviciosCiudadano implements OperacionesCiudadano {
+public class ServiciosCiudadano implements OperacionesCiudadano {
 
     @Autowired
     RepositorioCiudadano repositorioCiudadano ;
@@ -18,23 +19,10 @@ public class serviciosCiudadano implements OperacionesCiudadano {
         return null;
     }
 
-    @Override
-    public Ciudadano actualizar(Ciudadano ciudadano) {
-        return null;
-    }
-
-    @Override
-    public void borrar(Ciudadano ciudadano) {
-
-    }
-
-    @Override
+      @Override
     public List<Ciudadano> consultarT() {
         return repositorioCiudadano.findAll();
     }
 
-    @Override
-    public Ciudadano consultarPK(int pk) {
-        return null;
-    }
+
 }
