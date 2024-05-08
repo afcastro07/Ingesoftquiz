@@ -34,6 +34,6 @@ public class controladorCiudadanos {
         Ciudadano ciudadanollenar = new Ciudadano();
 
         model.addAttribute("ciudadanollenar",ciudadanollenar);
-        return "formcreacarro";
+        return "ciudadanollenar";
     }
 }
